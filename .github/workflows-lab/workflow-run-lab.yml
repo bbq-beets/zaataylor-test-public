@@ -1,0 +1,12 @@
+name: workflow-run-lab
+on:
+  workflow_run:
+    workflows: [other-lab]
+    types: [completed]
+    branches: [main]
+
+jobs:
+  foo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.event_name }}"
