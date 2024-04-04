@@ -1,7 +1,0 @@
-name: other
-on: push
-jobs:
-  foo:
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo 456
