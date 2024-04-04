@@ -1,4 +1,4 @@
-name: other
+name: other-lab
 on: push
 jobs:
   foo:
